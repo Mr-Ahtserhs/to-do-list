@@ -1,0 +1,86 @@
+$color: #f1f1f1;
+$color1: #fdfdfd;
+$background: #c74848;
+$shadow:   30px 30px 59px #8b3232, 
+            -30px -30px 59px #ff5e5e;
+body{ 
+    background-color: $background;
+}
+
+.app1{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#to-do-form {
+    input{
+        background-color: $background;
+        box-shadow: $shadow;
+        border: 0;
+        width: 200px;
+        height: 50px;
+        padding: 0 20px ;
+        margin: 20px;
+        color: $color;
+        font-size: 18px;
+        border-radius: 10px;
+            &::placeholder{
+                color: $color1;
+                opacity: 0.5;
+            }
+
+            &:focus{
+                outline: none;
+            }
+    }
+
+    button{
+        height: 50px;
+        width: 80px;
+        border-radius: 10px;
+        border: 0;
+        cursor: pointer;
+        background: $background;
+        box-shadow: $shadow;
+        color: $color1;
+        font-weight: bolder;
+            &:focus{
+                outline: none;
+            }
+    }
+}
+
+.list{
+    color: $color1;
+    width: 300px;
+    height: 40px;
+    margin: 20px auto;
+    background-color: $background;
+    box-shadow: $shadow;
+    border-radius: 5px;
+        p{
+            padding: 10px;
+            position: relative;
+
+                input{
+                    background-color: transparent;
+                    border: 0;
+                    color: $color1;
+                    font-size: 18px;
+
+                    &:focus{
+                        outline: none;
+                    }
+                }
+                span{
+                    position: absolute;
+                    right: 10px;
+                    cursor: pointer;
+                        .facions{
+                            margin: 0 5px;
+                            font-size: 15px;
+                        }
+                }
+        }
+}
